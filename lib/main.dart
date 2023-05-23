@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
             create: (context) => FriendBloc(repository: repository),
           ),
         ],
-        child: LayoutPage(),
+        child: LoginScreen(),
       ),
     );
   }
