@@ -21,8 +21,10 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, User?> {
   AuthenticationBloc() : super(null) {
     on<LoginEvent>((event, emit) async {
       try {
-        UserCredential userCredential = await _firebaseAuth.signInWithEmailAndPassword(
-            email: event.email, password: event.password);
+        UserCredential userCredential =
+            await _firebaseAuth.signInWithEmailAndPassword(
+                email: event.email, password: event.password);
+        print(userCredential);
         emit(userCredential.user);
       } catch (e) {
         print('Login error: $e');
