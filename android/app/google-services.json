@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42781952660",
+    "project_id": "staz-final",
+    "storage_bucket": "staz-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42781952660:android:16099f86f36f14b90f4281",
+        "android_client_info": {
+          "package_name": "com.example.appdevfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42781952660-9jng90p08i8kmcl5bit952m9fukr0ab5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8LsfW7jq58pubwO1vsDzX8FEssz7jE4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42781952660-9jng90p08i8kmcl5bit952m9fukr0ab5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
