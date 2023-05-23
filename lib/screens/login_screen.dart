@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/auth_bloc.dart';
 import '../helper/constraint.dart';
-import './dashboard_screen.dart';
+import '../layout/layout_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         listener: (context, state) {
           if (state != null) {
             Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => DashboardScreen()));
+                MaterialPageRoute(builder: (context) => LayoutPage()));
           } else {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
