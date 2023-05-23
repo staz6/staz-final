@@ -60,8 +60,7 @@ class DashboardScreen extends StatelessWidget {
                         IconButton(
                           icon: Icon(Icons.delete),
                           onPressed: () {
-                            // Handle delete button action
-                            // You can call a delete method or show a confirmation dialog
+                            
                           },
                         ),
                       ],

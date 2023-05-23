@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,7 +32,17 @@ class MyApp extends StatelessWidget {
             create: (context) => FriendBloc(repository: repository),
           ),
         ],
-        child: LoginScreen(),
+        child: BlocListener<AuthenticationBloc, User?>(
+          listener: (context, state) {
+            if (state != null) {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => LayoutPage()),
+              );
+            }
+          },
+          child: LoginScreen(),
+        ),
       ),
     );
   }
